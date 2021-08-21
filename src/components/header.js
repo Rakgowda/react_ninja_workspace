@@ -8,9 +8,9 @@ const Header = () => {
     return ( 
         <div >
              <Paper className="header" square >
-             <Typography className="headerTitle">
-            <span className="primary p-2">LOGO</span>
-        </Typography>
+                <Typography className="headerTitle">
+                    <span className="primary p-2">LOGO</span>
+                </Typography>
              </Paper>
             
         </div>
