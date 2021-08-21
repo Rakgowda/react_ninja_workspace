@@ -86,43 +86,43 @@ const Login = () => {
             <span className="secondaryText">sign in using email</span>
         </Typography>
         <form action="" >
-        <div className="form-group">
-            <label for="email address" className="secondaryLabel">Email address</label>
-            <input type = "text"
-            id = "inputID"
-            ref={email}
-            className = "form-control SecondaryborderColor"
-            id = "emailaddress"
-            placeholder = "eg, abc@salestable.com"
-            name = "email"
-            onChange={onChangeInput}
-            required />
-        </div>
-        <div className="form-group" style={{position:"relative"}}>
-            <label for="enter password" className="secondaryLabel">Enter Password</label>
-            <input type = "password"
-            className = "form-control SecondaryborderColor"
-            id = "password"
-            ref={password}
-            placeholder = "*********"
-            name = "password"
-            onChange={onChangeInput}
-            required />
-            {isPasswordHide?(<i className="bi bi-eye-slash eyeColor passwordEye" onClick={onPasswordShowClick}> </i>)
-            :(<i class="bi bi-eye eyeColor passwordEye" onClick={onPasswordShowClick}></i>)}
-            
-            
-        </div>
+            <div className="form-group">
+                <label for="email address" className="secondaryLabel">Email address</label>
+                <input type = "text"
+                id = "inputID"
+                ref={email}
+                className = "form-control SecondaryborderColor"
+                id = "emailaddress"
+                placeholder = "eg, abc@salestable.com"
+                name = "email"
+                onChange={onChangeInput}
+                required />
+            </div>
+            <div className="form-group" style={{position:"relative"}}>
+                <label for="enter password" className="secondaryLabel">Enter Password</label>
+                <input type = "password"
+                className = "form-control SecondaryborderColor"
+                id = "password"
+                ref={password}
+                placeholder = "*********"
+                name = "password"
+                onChange={onChangeInput}
+                required />
+                {isPasswordHide?(<i className="bi bi-eye-slash eyeColor passwordEye" onClick={onPasswordShowClick}> </i>)
+                :(<i class="bi bi-eye eyeColor passwordEye" onClick={onPasswordShowClick}></i>)}
+                
+                
+            </div>
 
-        <button type = "button"
-        class = "btn btn-primary btn-block signInbutton" 
-        disabled={isButtonDisabled}
-        onClick={onSubmit}
-        > 
-        Sign in 
-        </button>
+            <button type = "button"
+            class = "btn btn-primary btn-block signInbutton" 
+            disabled={isButtonDisabled}
+            onClick={onSubmit}
+            > 
+            Sign in 
+            </button>
 
-        <p className="error text-center pt-2">{errorMessage}</p>
+            <p className="error text-center pt-2">{errorMessage}</p>
     
         </form>
       
