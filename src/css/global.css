@@ -1,0 +1,38 @@
+.flex
+{
+    display: flex;
+}
+.flex-container
+{
+    display: flex;
+  flex-wrap: wrap;
+}
+.justifyAlignCenter
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary{
+    background-color: #1976D2;
+    color: white;
+    letter-spacing: 1.25px;
+}
+
+.secondaryText{
+    color:#87A0B4
+}
+.secondaryLabel{
+color: #6A8294;
+
+}
+
+.SecondaryborderColor{
+    border : 1.5px solid #E7F0F5
+}
+
+.error{
+    color:red
+}
+

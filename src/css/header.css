@@ -1,0 +1,11 @@
+.header{
+    background-color: #0494FD !important;
+    height: 77px;
+}
+
+.headerTitle{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    letter-spacing: 1.25px
+}

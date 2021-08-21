@@ -1,0 +1,71 @@
+.loginBackground{
+background-color: #F2FAFF;
+height: 100vh;
+}
+
+.loginPaper{
+    padding: 30px;
+    min-width: 450px;
+    min-height: 500px;
+}
+
+.signText{
+    position: relative;
+}
+.signText:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1.5px;
+    background: #E7F0F5;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+
+  .signText:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 1.5px;
+    background: #E7F0F5;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+.form-control{
+    height: 3em;
+}
+
+input::-webkit-input-placeholder {
+    color: #A0B7C6 !important;
+    }
+     
+    input:-moz-placeholder { /* Firefox 18- */
+    color: #A0B7C6 !important;  
+    }
+     
+    input::-moz-placeholder {  /* Firefox 19+ */
+    color: #A0B7C6 !important;  
+    }
+     
+    input:-ms-input-placeholder {  
+    color: #A0B7C6 !important;  
+    }
+
+    .signInbutton{
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .passwordEye{
+        position: absolute;
+        left: 90%;
+        top: 42px;
+    }
+
+    .eyeColor{
+        color:#BFD4DF;
+        /* background-color: white; */
+        /* padding-right: 10px; */
+    }
