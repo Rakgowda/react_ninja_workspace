@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+Ninja React Coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Please make sure to go through the below details before cloning the repository
 
-## Available Scripts
+Goal: Dynamic page development & Integration, as per the below details
 
-In the project directory, you can run:
+Design Figma URL - https://www.figma.com/file/6xhuursXAVWZiZlgH367HS/React-Ninja-Template
 
-### `yarn start`
+Design consists of two pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+    Login Page
+    Home Page
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Scope of work
 
-### `yarn test`
+    User should be able to successfully login using the email and password provided in the API details
+    After login user should land on the Home page and Users list shoudl be loaded from the Users List API
+    Pagination is add on
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+API Details
 
-### `yarn build`
+    Login API - POST - https://reqres.in/api/login
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Sample Request
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+{
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+}
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Users Listing API - GET - https://reqres.in/api/users?page=1
 
-### `yarn eject`
+Sample Response
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        }]
+}
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run in Postman
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+APIs made for developers and designers by Ben Howdle
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Other Assets Font - https://fonts.google.com/specimen/Roboto
 
-## Learn More
+Steps to follow
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Fork the repository
+    Make your changes
+    Submit the Pull Request from the forked repository
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Please note: git push on this repository is not allowed and only pull requests (PRs) from the forked repositories are allowed
 
-### Code Splitting
+Other Information:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Use of frontend frameworks like Bootstrap or Material-UI is allowed
 
-### Analyzing the Bundle Size
+Once you have completed the development, Please raise the pull request from your forked repository, and your work will be reviewed against:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    Design vs Developed screens
+    Coding Standards
+    Readability & Reusability of code
+    Code Quality and Size
 
-### Making a Progressive Web App
+This repository is meant to facilitate the interview process @Designstring and only referred candidates for the interview process are requested to access
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy Coding!!!
